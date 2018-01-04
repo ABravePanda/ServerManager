@@ -1,0 +1,221 @@
+#----------ServerManager-----------
+
+Prefix: '&a&lServerManager &7&l>>'
+NoPermission: '&4&l(!) &c You Dont Have Permission To Do That!'
+ConsoleMessagesEnabled: true
+ReloadMessage: '&c&lConfig Reloaded {name}'
+
+#----------Global-ChatClear-----------
+
+GlobalToChat: '&c&l{name} Cleared Chat!'
+GlobalToSender: '&c&lYou Cleared Global Chat, {name}!'
+
+#----------Self-ChatClear-----------
+
+SelfToSender: '&c&lYou Cleared Your Chat, {name}'
+
+#----------OtherPlayer-ChatClear-----------
+
+PlayerToSender: '&c&lYou Have Cleared {target} Chat, {name}!'
+PlayerToTarget: '&c&l{target}, Your Chat Has Been Cleared By {name}'
+
+#----------Chat-Enabling or Chat-Disabling-----------
+
+ChatOffMessage: '&4&l(!) &c Chat Is Disabled, {name}'
+ChatEnabledMessage: '&a&l{name} has turned on chat!'
+ChatDisabledMessage: '&4&l{name} has turned off chat!'
+
+#Toggle If On Server Restart Chat Will Be Automatically Enabled
+chatRestart: true
+
+#----------GUI-Config-----------
+
+#Enter A Number 0 to 53 - (Double Chest) - To Where You Want The Item To Be. - (DONT USE THE SAME NUMBER TWICE)
+
+Global: 20
+Self: 22
+Other Player: 24
+Enable Chat: 30
+Disable Chat: 32
+Close Menu: 49
+Help: 4
+FakeJoin: 3
+FakeLeave: 5
+
+#----------Chat-Delay-----------
+
+#ChatDelay Is In Miliseconds (Pick the seconds you want then add three 0's).
+chatDelay: 5000
+
+#Use [seconds] instead of just seconds
+warnMessage: '&6&l{name}, You must wait {time} more [seconds] to chat again.'
+
+#----------StaffChat-----------
+
+#The Staff Chat Format
+StaffChatFormat: '&a&lStaffChat: &6&l{name}: &e{message}'
+
+#The Staff Help Format
+StaffHelpFormat: '&a&lStaffHelp: &6&l{name}: &a{message}'
+
+#The Format Of The Message That Is Done When You Send A Message To Staff Help
+StaffHelpSuccess: '&a{name}, You have succesfully sent a message to the Staff! You will hear a reply shortly!'
+
+#----------Message-----------
+
+#The Message Sent To The Sender
+MessageFormatFrom: '&8{fromname} --> {toname}: &6{message}'
+
+#The Message Sent From The Sender
+MessageFormatTo: '&8{fromname} --> {toname}: &e{message}'
+
+#The Message Peek Message Format
+MessageFormatToAdmin: '&4Message Peek: &e&o{fromname} --> {toname}: &a&o{message}'
+
+#Player Is Not Online MSG
+MessageFormatNotOnline: '&4(!)&c {toname} is not online {name}!'
+
+#----------Chat-Broadcaster-----------
+
+#The Message When You Need To Put Something After /broadcast
+NoMessage: '&4&lError, you need a message!'
+
+#ONLY USE THE '&' COLOR CODES! Broadcast Color
+Color: '&3'
+
+#ONLY USE THE '&' COLOR CODES! Broadcast Color (name portion)
+NamePart: '&f[&c&l{name}&f] '
+
+#----------Chat-Mention-----------
+
+#Are Notifying Messages Enabled? true or false
+NotifyMessageEnabled: true
+
+#The Message When You Need To Put Something After /broadcast
+NotifyMessageChat: '&a&l{sendername} has mentioned you, {recievername}'
+
+#----------Anti-Swear-----------
+
+#Is AntiSwear Enabled? True or False
+AntiSwearEnabled: true
+
+#The Message When Someone Swears
+NoSwearMessage: '&c{name}, please dont say {word}'
+
+#The Message Sent To Admin When Someone Swears
+NoSwearAdmin: '&c{name} said {word}'
+
+#List Of Swears
+Swears:
+  - list
+  - swears
+  - here
+
+#----------Player-Muting-----------
+
+#Msg To Staff When A Player Is Muted
+MuteToStaff: '&a{name}, you have muted {target}.'
+
+#Msg To Player When They Are Muted.
+MuteToPlayer: '&c{target}, you have been muted by {name}.'
+
+#Msg To Staff When A Player Is Unmuted
+UnmuteToStaff: '&a{name}, you have unmuted {target}.'
+
+#Msg To Player When They Are Unmuted
+UnmuteToPlayer: '&a{target}, you have been unmuted by {name}.'
+
+#Msg To Muted Player When They Try To Talk
+TalkDenyMessage: '&c{name}, you are muted!'
+
+#----------Player-Warning-----------
+
+#Msg To Staff When A Player Is Muted
+WarnToStaff: '&a{name}, you have warned {target}.'
+
+#Msg To Player When They Are Muted.
+WarnToPlayer: '&c{target}, you have been warned by {name}.'
+
+#Warnings Until A Player Is Muted (Set To A High Number To Disable It)
+WarnsToMute: 5
+
+#Msg To Staff When A Player Is Auto-Muted
+AutoMuteToStaff: '&a{target} has been auto-muted because they surpassed the warnings until mute.'
+
+#Msg To Player When They Are Muted.
+AutoMuteToPlayer: '&c{target}, you have been auto-muted.'
+
+#Warnings Until A Player Is Kicked (Set To A High Number To Disable It)
+WarnsToKick: 3
+
+#Msg To Staff When A Player Is Auto-Kicked
+AutoKickToStaff: '&a{target} has been auto-kicked because they surpassed the warnings until kick.'
+
+#Msg To Player When They Are Kicked.
+AutoKickToPlayer: '&c{target}, you have been auto-kicked.'
+
+#----------Chat-Format-----------
+
+#Use to enable/disable custom chat format.
+ChatFormatEnabled: true
+
+#Custom Chat Format
+#Available Placeholders:
+#{prefix} - PermissionsEx
+#{faction} - Factions
+
+ChatFormat: '{prefix} {name} : {message}'
+
+#----------Placeholders-----------
+
+#|GlobalChatClear|
+#GlobalToChat - {name} Senders Name
+#GlobalToSender - {name} Senders Name
+
+#|SelfChatClear|
+#SelfToSender - {name} Senders Name
+
+#|OtherPlayerChatClear|
+#PlayerToSender - {target} Targets Name - {name} Senders Name
+#PlayerToTarget - {target} Targets Name - {name} Senders Name
+
+#|ChatDisabling/ChatEnabling|
+#ChatOffMessage - {name} Senders Name
+#ChatEnabledMessage - {name} Senders Name
+#ChatDisabledMessage - {name} Senders Name
+
+#|ChatDelay|
+#warnMessage - {name} Senders Name - [seconds] Used instead of typing "Seconds" - {time} Wait Time
+
+#|StaffChat|
+#StaffChatFormat - {name} Senders Name - {message} Sent Message
+#StaffHelpFormat - {name} Senders Name - {message} Sent Message
+#StaffChatSuccess - {name} Senders Name
+
+#|Message|
+#MessageFormatFrom - {fromname} The Senders Name - {toname} The Name Of The Reciever - {message} Sent Message
+#MessageFormatTo - {fromname} The Senders Name - {toname} The Name Of The Reciever - {message} Sent Message
+#MessageFormatToAdmin - {fromname} The Senders Name - {toname} The Name Of The Reciever - {message} Sent Message
+#MessageFormatNotOnline - {toname} The Name Of The Player You Were Messaging - {name} Your Name
+
+#|ChatBroadcaster|
+#NamePart - {name} Senders Name
+
+#|ChatMention|
+#NotifyMessageChat - {sendername} Sender Of The Message - {recievername} Reciever of the Message
+
+#|AntiSwear|
+#NoSwearMessage - {name} Senders Name - {word} Swear Word
+#NoSwearAdmin - {name} Bad Persons Name - {word} Swear Word
+
+#|PlayerMute|
+#MuteToStaff - {name} Senders Name - {target} Person Muted Name
+#MuteToPlayer - {name} Senders Name - {target} Person Muted Name
+#UnuteToStaff - {name} Senders Name - {target} Person Muted Name
+#UnuteToPlayer - {name} Senders Name - {target} Person Muted Name
+#TalkDenyMessage - {name} Person Muted Name
+
+#|ChatFormat|
+#Format - {name} Senders Name - {message} Senders Message.
+
+#----------End-Of-Config-----------

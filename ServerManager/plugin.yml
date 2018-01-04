@@ -1,0 +1,58 @@
+name: ServerManager
+version: 50.1.12
+main: me.abravepanda.servermanager.Main
+description: Chat Clear
+softdepend: [PermissionsEx, Factions]
+commands:
+    cc:
+        usage: /<command>
+        description: Clear Global Chat.
+    pcc:
+        usage: /<command>
+        description: Clear A Players Chat.
+    scc:
+        usage: /<command>
+        description: Clear Your Chat.
+    servermanager:
+        usage: /<command>
+        aliases: [sm]
+        description: Get Main Command!
+    chat:
+        usage: /<command>
+        description: Turn On/Off Chat.
+    msg:
+        usage: /<command>
+        aliases: [message, tell]
+        description: Message A Player.
+    broadcast:
+        usage: /<command>
+        aliases: [bc,announce]
+        description: Broadcast Something.
+    namebroadcast:
+        usage: /<command>
+        aliases: [nbc,nannounce]
+        description: Broadcast Something With Your Name.
+    mute:
+        usage: /<command>
+        description: Mute Someone.
+    unmute:
+        usage: /<command>
+        description: Unmute Someone.
+    warn:
+        usage: /<command>
+        description: Warn Someone!
+    warns:
+        usage: /<command>
+        description: Check Your Warnings!
+    delwarn:
+        usage: /<command>
+        description: Remove Your Warnings!
+    msgpeek:
+        usage: /<command>
+        description: Message Peeker!
+    join:
+        usage: /<command>
+        description: Fake Join!
+    leave:
+        usage: /<command>
+        description: Fake Leave!
